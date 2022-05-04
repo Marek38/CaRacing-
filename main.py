@@ -1,16 +1,11 @@
 import pygame, sys
-#from pygame import mixer
 import time
 import math
 from doplnok import scale_image, blit_rotate_center, blit_text_center
 from button import Button
 
-#pygame.mixer.init() #import mixeru
 pygame.init()   #stihane všetky importované moduly pygame
 pygame.display.set_caption("Menu")  #popis okna
-
-#MUSIC1 = pygame.mixer.music.load("hudba/untitled14.ogg") #hudba
-#MUSIC2 = pygame.mixer.music.load("hudba/untitled17.ogg") #hudba
 
 BG = pygame.image.load("obrazky/menuBG.png")    #pozadie 
 
@@ -603,7 +598,6 @@ while run: #cyklus na beh celej hry
     while GAME_MODE:
         game_mode() #povolanei herneho modu
     while GAME_MODE_1VPC: #mod 1VPC
-        #pygame.mixer.music.play(MUSIC1)
         clock.tick(FPS) #FPS limit
         draw(WIN, images, player_car1, computer_car, game_info) #vykreslenie, obrazkov, aut, hernych udajov
         while not game_info.started: 
@@ -635,7 +629,6 @@ while run: #cyklus na beh celej hry
             GAME_MODE_1VPC = False #ukoncenie okna 
 
     while GAME_MODE_1V1: #mod 1V1
-        #pygame.mixer.music.play(MUSIC1)
         clock.tick(FPS) #FPS limit
         draw(WIN, images, player_car1, player_car2, game_info) #vykreslenie, obrazkov, aut, hernych udajov
         while not game_info.started:
