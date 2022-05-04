@@ -27,7 +27,7 @@ GREEN_CAR = scale_image(pygame.image.load("obrazky/green-car.png"), 0.55)
 YELLOW_CAR = scale_image(pygame.image.load("obrazky/yellow-car.png"), 0.55)
 KHAKI_CAR = scale_image(pygame.image.load("obrazky/khaki-car.png"), 0.55)
 
-CARS = [RED_CAR , BLUE_CAR ,MAGENTA_CAR, GREY_CAR, GREEN_CAR, YELLOW_CAR, KHAKI_CAR]    #pole s esetmi aut
+CARS = [RED_CAR , BLUE_CAR ,MAGENTA_CAR, GREY_CAR, GREEN_CAR, YELLOW_CAR, KHAKI_CAR]    #pole s asetmi aut
 
 WIDTH, HEIGHT = TRACK.get_width(), TRACK.get_height()   #vyska/sirka okna
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))  #pridelenie okna pod WIN
